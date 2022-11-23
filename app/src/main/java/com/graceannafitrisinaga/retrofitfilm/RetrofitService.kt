@@ -21,7 +21,7 @@ interface RetrofitService {
 
             if (retrofitService == null) {
                 val retrofit = Retrofit.Builder()
-                    //API yang digunakan untuk mengambil data
+                    //API yang digunakan untuk mendapatkan daftar film
                     .baseUrl("https://howtodoandroid.com/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
