@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //membuat instance ViewModel
         viewModel = ViewModelProvider(this, MyViewModelFactory(MainRepository(retrofitService))).get(MainViewModel::class.java)
 
         binding.recyclerview.adapter = adapter
@@ -34,6 +35,8 @@ class MainActivity : AppCompatActivity() {
         viewModel.errorMessage.observe(this, Observer {
 
         })
+        
+        //memanggil API
         viewModel.getAllMovies()
     }
 }
