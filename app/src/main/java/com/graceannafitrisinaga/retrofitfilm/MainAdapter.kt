@@ -1,3 +1,4 @@
+//nama paket
 package com.graceannafitrisinaga.retrofitfilm
 
 import android.view.LayoutInflater
@@ -6,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.graceannafitrisinaga.retrofitfilm.databinding.AdapterMovieBinding
 
+//class adapter untuk recyclerview untuk menyetel semua item ke dalam recyclerview
 class MainAdapter: RecyclerView.Adapter<MainViewHolder>() {
 
     var movies = mutableListOf<Movie>()
