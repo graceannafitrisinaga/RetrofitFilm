@@ -7,6 +7,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.graceannafitrisinaga.retrofitfilm.databinding.ActivityMainBinding
 
+//class ini digunakan untuk mengamati respons dari API dan memperbarui UI
 class MainActivity : AppCompatActivity() {
     private val TAG = "MainActivity"
     private lateinit var binding: ActivityMainBinding
