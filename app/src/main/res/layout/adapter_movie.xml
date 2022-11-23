@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- menggunakan cardview untuk menampilkan data gambar dan tulisan -->
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -8,12 +10,14 @@
     android:elevation="8dp"
     app:cardCornerRadius="8dp">
 
+    <!-- mengatur tampilan image pada cardview -->
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageview"
         android:layout_width="match_parent"
         android:scaleType="centerCrop"
         android:layout_height="200dp" />
 
+    <!-- mengatur tampilan teks pada cardview -->
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
