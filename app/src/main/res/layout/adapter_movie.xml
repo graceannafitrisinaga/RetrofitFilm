@@ -10,7 +10,7 @@
     android:elevation="8dp"
     app:cardCornerRadius="8dp">
 
-    <!-- mengatur tampilan image pada cardview -->
+    <!-- mengatur tampilan gambar pada cardview -->
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageview"
         android:layout_width="match_parent"
